@@ -1,0 +1,27 @@
+{
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "files.exclude": {
+    "**/src/**/*.d.ts": true,
+    "**/src/**/*.map": true,
+    "**/src/pages/*.js": true
+  },
+  "cSpell.language": "ru,en",
+  "cSpell.enabledLanguageIds": [
+    "css",
+    "git-commit",
+    "html",
+    "javascript",
+    "json",
+    "jsonc",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "svg",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ]
+}

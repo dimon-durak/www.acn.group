@@ -1,0 +1,173 @@
+acn.group
+
+/
+
+about
+
+publicdoc
+
+protection
+
+articles
+
+contact
+
+#map
+
+#companyDetails
+
+news
+
+#timestamp
+
+services
+
+internet
+
+private
+
+business
+
+analytics
+
+l2vlan
+
+l2vpn
+
+tariffs
+
+technologies
+
+gepon
+
+equipment
+
+1PC
+
+4PC
+
+switch
+
+router
+
+routerWiFi
+
+ftth
+
+equipment
+
+1PC
+
+switch
+
+router
+
+media
+
+mediaWifi
+
+cover
+
+iptv
+
+cctv
+
+local
+
+cloud
+
+installation
+
+price
+
+fiber
+
+design
+
+splicer
+
+reflectometry
+
+installation
+
+suspension
+
+sewerage
+
+trench
+
+pierce
+
+sks
+
+lir
+
+hosting
+
+form
+
+Приложение для создания и показа html форм
+
+Для работы использует хеш url в качестве основной навигации и search url в качестве опциональной системы предзаполнения значений формы
+
+/ и отсутствие хеша
+
+На индексе и при отсутствии хеша, можно показывать 
+	* форму по умолчанию (редирект)
+	* 404 ошибку
+	* пользовательский html``
+
+#common
+
+Общие вопросы
+
+#support
+
+Запрос в техподдержку
+
+#cooperation
+
+Запрос о сотрудничестве
+
+#~list
+
+Показывает список доступных к заполнению форм
+
+#~create
+
+Создаёт описание формы (FormMetadata)
+
+Это интерфейс создания произвольной формы, который генерирует метаданные формы и выводит их на экран. Можно сохранить их в файл или в базу данных, а можно отправить на email
+
+Эти метаданные используются приложением \form для генерации самой формы
+
+Поля:
+* name // Идетентификатор в #hash
+* title // Показывается в заголовке формы
+* description
+* form: {
+	action
+	method 
+	thankyouUrl
+	items [{
+		tagName
+		description
+		type
+		name
+		classname
+		requred
+		label
+		placeholder
+		value	
+	}]
+	style {css``}
+}
+
+
+Установив значения action и name как у Формы Гугл, можно их использовать 
+
+
+
+#JSON-LD(Organization)
+
+#JSON-LD(HowTo)

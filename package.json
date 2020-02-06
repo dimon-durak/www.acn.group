@@ -1,0 +1,71 @@
+{
+  "name": "akc",
+  "version": "0.0.1",
+  "description": "АКС - высокоскоростной интернет и ИТ-услуги",
+  "license": "MIT",
+  "main": "index.html",
+  "module": "src/akc-app.js",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "cd dist && es-dev-server --app-index index.html --port 8888",
+    "dev": "npm run watch & npm run serve",
+    "prepublishOnly": "npm run build",
+    "serve": "es-dev-server --node-resolve --app-index index.html --port 8008",
+    "serve:dist": "es-dev-server --app-index ./dist/index.html --open",
+    "watch": "tsc-watch"
+  },
+  "files": [
+    "src",
+    "!lib/fixtures"
+  ],
+  "dependencies": {
+    "@types/dompurify": "^0.0.33",
+    "@types/marked": "^0.6.5",
+    "dompurify": "^2.0.7",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2",
+    "marked": "^0.7.0",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@open-wc/building-rollup": "^0.12.0",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "@webcomponents/webcomponentsjs": "^2.3.0",
+    "es-dev-server": "^1.18.5",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-lit": "^1.2.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-wc": "^1.2.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "lit-analyzer": "^1.1.9",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.25.1",
+    "rollup-plugin-cpy": "^2.0.1",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "1.8.0",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.6.4",
+    "web-component-analyzer": "^0.1.17"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "generatedTime": 1576422333644,
+  "servers": [
+    {
+      "name": "DS-1",
+      "configuration": {
+        "CPU": {
+          "description": "12 core (2,3-2,8Ghz) - 24 Threads",
+          "items": [
+            {
+              "name": "INTEL XEON E5-2630 SR0KV (2,3-2,8Ghz, 6Core, 12Threads, 15Mb, ddr3 1333Mhz)",
+              "count": 2
+            }
+          ]
+        },
+        "MB": {
+          "description": "SuperMicro X9DRW-3F",
+          "items": []
+        },
+        "RAM": {
+          "description": "32Gb",
+          "items": [
+            {
+              "name": "4Gb RDIMM Kingston DDR3-1333Mhz (KVR16R11S4/4)",
+              "count": 8
+            }
+          ]
+        },
+        "DRIVE": {
+          "description": "16100Gb",
+          "items": [
+            {
+              "name": "Raid Adaptec ASR-6405 (512Mb)",
+              "count": 1
+            },
+            {
+              "name": "SSD Intel 100Gb (SSDSC2BA100G3)",
+              "count": 1
+            },
+            {
+              "name": "HDD HGST 4Tb (HUS724040ALA640)",
+              "count": 4
+            }
+          ]
+        },
+        "POWER": {
+          "description": "с резервированием (2 блока питания)",
+          "items": [
+            {
+              "name": "PDB-PT825-8824",
+              "count": 1
+            },
+            {
+              "name": "БП 720W SuperMicro PWS-741P-1R (rev1.1)",
+              "count": 2
+            }
+          ]
+        },
+        "CHASSIS": {
+          "description": "SuperServer 6027R-N3RF (model CSE-825TQ-R740WB)",
+          "items": []
+        },
+        "CARDS": {
+          "description": "1xLAN",
+          "items": [
+            {
+              "name": "LanCard Intel E1G42EF-SFP 82576",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "status": "working",
+      "title": "2U chassis SuperServer 6027-N3RF / 2 x Xeon E5-2530 (12 core 2,3-2,8Ghz) 24 Threads / 32Gb / RAID: 1 x SSD 100Gb + 4 x HDD 4Tb",
+      "description": "Надежный сервер для предприятия среднего размера, с увеличенной дисковой подсистемой (под систему быстрый SSD на 100Гб и два массива в режиме зеркало (RAID 1) по 2х4Тб каждый). В данном сервере возможно замена процессоров на более производительные XEON E5-26xxV2. Возможно увеличение памяти до 64/128/256Гб, а также увеличение емкости дисковой подсистемы.",
+      "cost": 2618,
+      "units": 2,
+      "powerlevel": "A",
+      "classAready": true,
+      "net": [
+        "lan1",
+        "lan2",
+        "IPMI",
+        "sfp1",
+        "sfp2"
+      ],
+      "images": [
+        "ds-1-front.jpg",
+        "ds-1-open.jpg"
+      ]
+    },
+    {
+      "name": "DS-25",
+      "configuration": {
+        "CPU": {
+          "description": "16 core",
+          "items": [
+            {
+              "name": "Intel Xeon E5-2609",
+              "count": 2
+            }
+          ]
+        },
+        "MB": {
+          "description": "SuperMicro X9DRi-F",
+          "items": []
+        },
+        "RAM": {
+          "description": "64Gb",
+          "items": [
+            {
+              "name": "4Gb RDIMM kingston 1066Mhz",
+              "count": 8
+            }
+          ]
+        },
+        "DRIVE": {
+          "description": "2100Gb",
+          "items": [
+            {
+              "name": "SSD Intel 100Gb <model>",
+              "count": 1
+            },
+            {
+              "name": "HDD WD 1Tb <model>",
+              "count": 2
+            },
+            {
+              "name": "Raid Adaptec",
+              "count": 1
+            }
+          ]
+        },
+        "POWER": {
+          "description": "с резервированием",
+          "items": [
+            {
+              "name": "PDU Supermicro XXX",
+              "count": 1
+            },
+            {
+              "name": "БП 720W SuperMicro X720-pt",
+              "count": 2
+            }
+          ]
+        },
+        "CHASSIS": {
+          "description": "SuperMicro 825TQ",
+          "items": []
+        },
+        "CARDS": {
+          "description": "",
+          "items": []
+        }
+      },
+      "status": "ready",
+      "title": "",
+      "description": "",
+      "cost": "",
+      "units": "",
+      "powerlevel": "",
+      "classAready": false,
+      "net": [
+        ""
+      ],
+      "images": [
+        ""
+      ]
+    }
+  ]
+}
