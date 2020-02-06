@@ -1,4 +1,4 @@
-import { LitElement, customElement, css, html, property } from 'lit-element'
+import { LitElement, customElement, html, property } from 'lit-element'
 
 @customElement('configurator-page')
 export class ConfiguratorPage extends LitElement {
@@ -8,7 +8,7 @@ export class ConfiguratorPage extends LitElement {
 
   render() {
     return html`
-      
+
     `
   };
 
