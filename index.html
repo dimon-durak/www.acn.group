@@ -61,29 +61,82 @@
     <!-- <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script> -->
 
     <style>
+      @font-face {
+        font-family: "Mono Regular";
+        src:  url("/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2") format("woff2"),
+              url("/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Mono Bold";
+        src: url("/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold.woff2") format("woff2"),
+              url("/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Micra";
+        src:  url("/fonts/micra.ttf");
+      }
+      @font-face {
+        font-family: "Domkrat";
+        src: url("/fonts/domkrat.ttf");
+      }
+      @font-face {
+        font-family: "Marmelad";
+        src: url("/fonts/marmelad.ttf");
+      }
+      @font-face {
+        font-family: "Continuum";
+        src: url("/fonts/continuum.ttf");
+      }
+      @font-face {
+        font-family: "Play Bold";
+        src: url("/fonts/play-bold.ttf");
+      }
+      @font-face {
+        font-family: "Play Regular";
+        src: url("/fonts/play-regular.ttf");
+      }
       body,html {
         margin: 0;
         padding: 0;
         -webkit-font-smoothing: antialiased;
-        background-color: var(--background-color);
         z-index: -1;
+        font: var(--font);
+        color: var(--color);
+        background-color: var(--background-color);
       }
       :root {
         --color: #fff;
         --primary-color: #1867c0;
-        --accent-color: #d63200;
+        --primary-color-variant: #3700b3;
+        --secondary-color: #03dac6;
+        --secondary-color-variant: #018786;
+        --error-color: #cf6679;
+
         --background: url(/images/backgrounds/fiber.jpg) center / cover no-repeat fixed;
         --background-color: #263238;
         --border-color: rgba(0, 0, 0, 0.12);
         --border-radius: 0.25rem;
-        --font: condensed normal 12pt "Helvetica Neue", serif;
+
+        --font-family-mono-regular: "Mono Regular", serif;
+        --font-family-mono-bold: "Mono Bold", serif;
+        --font-family-micra: "Micra", serif;
+        --font-family-continuum: "Continuum", serif;
+        --font-family-domkrat: "Domkrat", serif;
+        --font-family-marmelad: "Marmelad", serif;
+        --font-family-play-bold: "Play Bold", serif;
+        --font-family-play-regular: "Play Regular", serif;
+
+        --font-family-header: var(--font-family-micra);
+
+        --font: normal 13pt var(--font-family-mono-regular);
       }
+
     </style>
     <script type="module" src="/src/akc-elements.js"></script>
   </head>
 
   <body>
-    <akc-pages id="pages"></akc-pages>
+    <wave-pages id="akc"></wave-pages>
 
     <noscript>
       <h3>Так вышло, что для работы сайта необходим JavaScript</h3>

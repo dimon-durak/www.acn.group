@@ -64,69 +64,18 @@ const templateMap: [pathname,TemplateResult][] = [
         }
       </style>`
   ],
-  // ~fixies~
-  [
-    '~main~~fixies~',
-    html`
-      <main>
-        <img src="/images/under-construction.svg"/>
-        <div class="bar">Сайт на обслуживании</div>
-      </main>
-      <style>
-        :host {
-          --background: url(/images/backgrounds/fixies.png) top left / cover no-repeat fixed;
-          --main-background: rgba(0,0,0, 0.75);
-          --footer-width: 100%;
-        }
-        main {
-          border: 1px solid var(--primary-color, grey);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          justify-content: space-around;
-        }
-        header,aside,footer {
-          display: none;
-        }
-        img {
-          max-width: 10rem;
-        }
-        .bar {
-          cursor: default;
-          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-          background-color: #ffe800;
-          background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-          min-height: 2.5rem;
-          width: 90%;
-          max-width: 30rem;
-          color: red;
-          font-size: 1.5rem;
-          font-weight: 700;
-          line-height: 200%;
-          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, -3px -21px 4px rgba(28, 11, 68, 0);
-          text-transform: uppercase;
-          text-align: center;
-        }
-        .bar::selection {
-          color: grey;
-        }
-      </style>`
-  ],
   // ~header~
   [
     '~header~',
     html`
       <header>
-        <a href="/"><img id="logo" src="/images/logo.svg"/></a>
+        <a href="/"><img style="max-width: 16rem;" id="logo" src="/images/logotype++.svg"/></a>
       </header>`
   ],
   // ~left~
   [
     '~left~',
-    html`
-        <akc-nav></akc-nav>
-    `
+    emptyTemplate
   ],
   // ~footer~
   [
@@ -186,37 +135,16 @@ const templateMap: [pathname,TemplateResult][] = [
   [
     '~main~/form/',
     html`
-      <main><form-page .caption=${ 'Ваш вопрос'}></form-page></main>
-      <style>
-        :host {
-          --background: url(/images/backgrounds/ddos.jpg) center / cover no-repeat fixed;
-          --main-background: rgba(0,0,0, 0.75);
-        }
-        main {
-          border: 1px solid var(--primary-color, grey);
-        }
-        #right > nav {
-          display: none;
-        }
-      </style>`
+      <form-page .caption=${ 'Ваш вопрос' }></form-page>
+    `
   ],
   // Новости '/news/'
   [
     '~main~/news/',
     html`
-      <main>
-        <h1><span class="accent">Новости</span></h1>
-      </main>
-      <style>
-        :host {
-          --background: url(/images/backgrounds/news.jpg) center / cover no-repeat fixed;
-          --main-background: rgba(0,0,0, 0.75);
-          --footer-width: 100%;
-        }
-        main {
-          border: 1px solid var(--primary-color, grey);
-        }
-      </style>`
+      <div>
+        <h1><span>Новости</span></h1>
+      </div>`
   ],
   // [
   //   '~left~/news/',

@@ -1,3 +1,4 @@
-export { AkcPages } from './akc-pages';
-export { FormPage } from './pages/form-page';
+export { WavePages } from './pages/wave-pages';
 export { IndexPage } from './pages/index-page';
+export { FixiesPage} from './pages/fixies-page';
+export { FormPage  } from './pages/form-page';

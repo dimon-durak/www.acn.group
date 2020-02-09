@@ -7,7 +7,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "inlineSources": true,
-    "lib": [ "esnext", "es2017", "dom" ],
+    "lib": [ "esnext", "es2017", "dom", "DOM", "ES2016" ],
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
